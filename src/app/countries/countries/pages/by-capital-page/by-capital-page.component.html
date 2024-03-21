@@ -1,0 +1,24 @@
+<h2>Per capitale</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+      <!-- Searchbox -->
+      <shared-searchbox
+      (inputValue)="searchByCapital($event)"
+      placeholder='Buscar per capitale'
+      ></shared-searchbox>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <ul>
+      <li
+      *ngFor="let country of countries">
+        {{country.capital}} - {{country.fifa}}
+      </li>
+    </ul>
+  </div>
+</div>

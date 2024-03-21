@@ -1,0 +1,10 @@
+<!-- Searchbox -->
+<input
+type="text"
+placeholder="{{ placeholder }}"
+class="form-control"
+(keyup.enter)="emitInputValue(inputRef.value)"
+
+#inputRef
+>
+
