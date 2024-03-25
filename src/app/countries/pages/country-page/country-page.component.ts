@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { CountriesService } from '../../../services/countries.service';
+import { CountriesService } from '../../services/countries.service';
 import { switchMap } from 'rxjs';
-import { Country } from '../../../interfaces/by-capital.interfaces';
+import { Country } from '../../interfaces/by-capital.interfaces';
 
 @Component({
   selector: 'app-country-page',
