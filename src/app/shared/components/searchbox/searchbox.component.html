@@ -1,9 +1,12 @@
+<!-- (keyup.enter)="emitInputValue(inputRef.value)" -->
+
 <!-- Searchbox -->
 <input
 type="text"
 placeholder="{{ placeholder }}"
 class="form-control"
-(keyup.enter)="emitInputValue(inputRef.value)"
+[value]="initialValue"
+(keyup)="onKeyPress(inputRef.value)"
 
 #inputRef
 >
